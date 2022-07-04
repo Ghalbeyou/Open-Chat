@@ -13,7 +13,7 @@ Client get `json` response and read it and send data to server.
 So, first we need to clone the repository.
 
 ```bash
-gh clone Ghalbeyou/OpenChat
+gh clone Ghalbeyou/Open-Chat
 ```
 
 Then we need to install the dependencies.
