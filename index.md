@@ -1,37 +1,56 @@
-## Welcome to GitHub Pages
+# Open Chat
+![OpenChat](OpenChat.png)
 
-You can use the [editor on GitHub](https://github.com/Ghalbeyou/Open-Chat/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![shields](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
+![shields](https://img.shields.io/badge/language-Python-blue.svg?style=for-the-badge)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+A free and open source but not `realtime` chat app with server and client built in `python` using `flask`.
 
-### Markdown
+Server response `json` and save data as `json` file.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Client get `json` response and read it and send data to server.
+## Installation
+So, first we need to clone the repository.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+gh clone Ghalbeyou/OpenChat
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Then we need to install the dependencies.
 
-### Jekyll Themes
+```bash
+pip install -r requirements.txt
+```
+After that, we got 2 folders:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Ghalbeyou/Open-Chat/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```yml
+- server
+- client
+```
+go in each folder you want and run the following commands:
 
-### Support or Contact
+```bash
+python3 server.py
+python3 client.py
+```
+## Usage
+To start the server, go to directory server and run the following command:
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+```bash
+python3 server.py
+```
+after that, you can see server is running on port `8300`. witch is the default port.
+
+Now, the `client` should be opened and connected to the server. so, in the `client` folder, run the following command:
+
+```bash
+python3 client.py
+```
+and then, it will ask for `username`, `ip` and `port`.
+
+when all was correct the user connects to the server and finally can use the server.
+Also, the limitations of the server are: `unlimited` number of users, `unlimited` number of messages and `unlimited` number of words.
+## License
+[`MIT`](https://opensource.org/licenses/MIT)
+## Contacts
+[`Ghalbeyou`](https://github.com/ghalbeyou) is owenr of this project and you can contact him on [`Github`](https://github.com/ghalbeyou).
