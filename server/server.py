@@ -11,7 +11,7 @@ def getUsers():
 @app.route('/getMessages')
 def getMessages():
     return json.jsonify(msg)
-@app.route('/getMessages', methods=['POST'])
+@app.route('/sendMessages', methods=['POST'])
 def sendMessage():
     message_author = request.form['author']
     message_content = request.form['message']

@@ -6,7 +6,7 @@ sv_ip = "127.0.0.1"
 sv_port = 8300
 def send_message(user):
     m = input('Your Message > ')
-    r = requests.post(f'http://{sv_ip}:{sv_port}/getMessages', {
+    r = requests.post(f'http://{sv_ip}:{sv_port}/sendMessages', {
         'author': user,
         'message': m
     })
