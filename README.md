@@ -1,5 +1,8 @@
 # Open Chat
 ![OpenChat](OpenChat.png)
+THIS PROJECT IS NOT UPDATED ANYMORE.
+
+
 
 ![shields](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
 ![shields](https://img.shields.io/badge/language-Python-blue.svg?style=for-the-badge)
